@@ -107,6 +107,7 @@ router.delete('/:id', async (req, res) => {
       id: req.params.id,
     },
   });
+  res.json("Product has been deleted").status(200);
 });
 
 module.exports = router;
