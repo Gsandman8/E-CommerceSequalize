@@ -34,7 +34,7 @@ router.put('/:id', async (req, res) => {
       id: req.params.id,
     },
   });
-  res.json(categoryData).status(200);
+  res.json("Category has been updated").status(200);
 });
 
 router.delete('/:id', async (req, res) => {

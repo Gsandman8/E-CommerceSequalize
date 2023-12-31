@@ -34,7 +34,9 @@ router.put('/:id', async (req, res) => {
       id: req.params.id,
     },
   });
-  res.json(updatedTag).status(200);
+  res.json(
+    "Tag has been updated"
+  ).status(200);
 });
 
 router.delete('/:id', async (req, res) => {
